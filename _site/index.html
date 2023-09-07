@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/images/imgs-compressed/favicon-flash.png" type="image/x-icon">
+  <title>Dynamic Content Generation with Liquid and Jekyll</title>
+
+</head>
+
+<body>
+  <!-- AlternatE Way to dynamically generate a navigation bar -->
+  <!-- <nav>
+    
+    <a href="/" style="color: red;" >
+      Home
+    </a>
+    
+    <a href="/" style="color: red;" >
+      About
+    </a>
+    
+    <a href="/" style="color: red;" >
+      Contact
+    </a>
+    
+  </nav> -->
+
+  <!-- NAV BAR -->
+  <nav class="nav">
+    <ul class="sidebar">
+
+      <!-- FOR MOBILE: HIDE NAV -->
+      <li onclick=hideSidebar()><a href="#" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+            viewBox="0 -960 960 960" width="24">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" class="logo">Czarena Wealth™</a></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Contact</a></li>
+
+      <!-- FOR MOBILE: SHOW NAV -->
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+            viewBox="0 -960 960 960" width="24">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a></li>
+    </ul>
+  </nav>
+
+  <!-- DYNAMICALLY CREATING PROJECT SECTION WITH LIQUID -->
+  <section id="projects" class="projects global-padding">
+    <h2>Projects</h2>
+    <div class="container">
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\omnifood-mockup.png" alt="Omnifood Project" loading="lazy">
+        <div class="overlay">
+          <h3>Omnifood Project</h3>
+          <p>A website for a startup that specializes in healthy eating.</p>
+          <a href="https://github.com/wealthczarena/Omnifood-Project" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\portfolio-screenshot.png" alt="Personal Portfolio" loading="lazy">
+        <div class="overlay">
+          <h3>Personal Portfolio</h3>
+          <p>My personal portfolio website showcasing my work.</p>
+          <a href="https://github.com/wealthczarena/Algofy-Practical-Assignment---Portfolio" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\ssaway.png" alt="Spin Spin Away" loading="lazy">
+        <div class="overlay">
+          <h3>Spin Spin Away</h3>
+          <p>My first Three.js Project - Side-by-Side 3D meshes.</p>
+          <a href="https://github.com/wealthczarena/Spin-Spin-Away.git" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\rotate.png" alt="Row-Row-Tate" loading="lazy">
+        <div class="overlay">
+          <h3>Row-Row-Tate</h3>
+          <p>Three.js project - 3D child mesh rotating around parent mesh</p>
+          <a href="https://github.com/wealthczarena/Row-Row-Tate" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\cr-coding-prjt-1.png" alt="Creative Coding with Javascript" loading="lazy">
+        <div class="overlay">
+          <h3>Creative Coding with Javascript</h3>
+          <p>Generative art with Javascript</p>
+          <a href="/" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\cr-coding-prjt-2.png" alt="Creative Coding with Javascript" loading="lazy">
+        <div class="overlay">
+          <h3>Creative Coding with Javascript</h3>
+          <p>Generative art with Javascript</p>
+          <a href="/" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\cr-coding-prjt-3.png" alt="Creative Coding with Javascript" loading="lazy">
+        <div class="overlay">
+          <h3>Creative Coding with Javascript</h3>
+          <p>Generative art with Javascript</p>
+          <a href="/" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\cr-coding-prjt-4.png" alt="Creative Coding with Javascript" loading="lazy">
+        <div class="overlay">
+          <h3>Creative Coding with Javascript</h3>
+          <p>Generative art with Javascript</p>
+          <a href="/" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+      <div class="post horizontal-line">
+        <img src="assets\images\imgs-compressed\cr-coding-prjt-5.png" alt="Creative Coding with Javascript" loading="lazy">
+        <div class="overlay">
+          <h3>Creative Coding with Javascript</h3>
+          <p>Generative art with Javascript</p>
+          <a href="/" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      
+    </div>
+  </section>
+
+
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "flex";
+    }
+
+    function hideSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "none";
+    }
+  </script>
+  <script src="/assets/js/smoothScroll.js"></script>
+</body>
+
+</html>

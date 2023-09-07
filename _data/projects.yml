@@ -1,0 +1,44 @@
+- name: Omnifood Project
+  description: A website for a startup that specializes in healthy eating.
+  image: assets\images\imgs-compressed\omnifood-mockup.png
+  link: https://github.com/wealthczarena/Omnifood-Project
+
+- name: Personal Portfolio
+  description: My personal portfolio website showcasing my work.
+  image: assets\images\imgs-compressed\portfolio-screenshot.png
+  link: https://github.com/wealthczarena/Algofy-Practical-Assignment---Portfolio
+
+- name: Spin Spin Away
+  description: My first Three.js Project - Side-by-Side 3D meshes.
+  image: assets\images\imgs-compressed\ssaway.png
+  link: https://github.com/wealthczarena/Spin-Spin-Away.git
+
+- name: Row-Row-Tate
+  description: Three.js project - 3D child mesh rotating around parent mesh
+  image: assets\images\imgs-compressed\rotate.png
+  link: https://github.com/wealthczarena/Row-Row-Tate
+
+- name: Creative Coding with Javascript
+  description: Generative art with Javascript
+  image: assets\images\imgs-compressed\cr-coding-prjt-1.png
+  link: /
+
+- name: Creative Coding with Javascript
+  description: Generative art with Javascript
+  image: assets\images\imgs-compressed\cr-coding-prjt-2.png
+  link: /
+
+- name: Creative Coding with Javascript
+  description: Generative art with Javascript
+  image: assets\images\imgs-compressed\cr-coding-prjt-3.png
+  link: /
+
+- name: Creative Coding with Javascript
+  description: Generative art with Javascript
+  image: assets\images\imgs-compressed\cr-coding-prjt-4.png
+  link: /
+
+- name: Creative Coding with Javascript
+  description: Generative art with Javascript
+  image: assets\images\imgs-compressed\cr-coding-prjt-5.png
+  link: /

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/images/imgs-compressed/favicon-flash.png" type="image/x-icon">
+  <title>{{ page.title }}</title>
+
+</head>
+
+<body>
+  <!-- AlternatE Way to dynamically generate a navigation bar -->
+  <!-- <nav>
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url==item.link %}style="color: red;" {% endif %}>
+      {{ item.name }}
+    </a>
+    {% endfor %}
+  </nav> -->
+
+  <!-- NAV BAR -->
+  <nav class="nav">
+    <ul class="sidebar">
+
+      <!-- FOR MOBILE: HIDE NAV -->
+      <li onclick=hideSidebar()><a href="#" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+            viewBox="0 -960 960 960" width="24">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" class="logo">Czarena Wealth™</a></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Contact</a></li>
+
+      <!-- FOR MOBILE: SHOW NAV -->
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+            viewBox="0 -960 960 960" width="24">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a></li>
+    </ul>
+  </nav>
+
+  <!-- DYNAMICALLY CREATING PROJECT SECTION WITH LIQUID -->
+  <section id="projects" class="projects global-padding">
+    <h2>Projects</h2>
+    <div class="container">
+      {% for project in site.data.projects %}
+      <div class="post horizontal-line">
+        <img src="{{ project.image }}" alt="{{ project.name }}" loading="lazy">
+        <div class="overlay">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description | truncatewords: 20 }}</p>
+          <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer">Go to Repo</a>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      {% endfor %}
+    </div>
+  </section>
+
+
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "flex";
+    }
+
+    function hideSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "none";
+    }
+  </script>
+  <script src="/assets/js/smoothScroll.js"></script>
+</body>
+
+</html>
