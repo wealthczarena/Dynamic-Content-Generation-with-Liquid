@@ -49,7 +49,7 @@ yarn install
 yarn start
 ```
 
-# Autor
+# Author
 
 Czarena Wealth
 
